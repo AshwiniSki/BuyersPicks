@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="ads" destination="RN8-b7-fBl" id="Keu-ks-Mdn"/>
+                <outlet property="adsLand" destination="Cu6-2x-dUt" id="qBj-6J-nJh"/>
+                <outlet property="allVendorsButton" destination="YP8-Wh-f3h" id="fyY-Jf-JsF"/>
+                <outlet property="allVendorsButtonLand" destination="yww-eU-rZT" id="KSx-Bk-O7L"/>
+                <outlet property="createNEwVendorButton" destination="Xyk-rB-6w7" id="UnD-e0-9VS"/>
+                <outlet property="createNEwVendorButtonLand" destination="e54-iP-P82" id="NG2-hU-TwB"/>
+                <outlet property="createNewVendorLabel" destination="htT-p0-b7h" id="2Mi-uw-YiC"/>
+                <outlet property="createNewVendorLabelLand" destination="6iO-jN-pPX" id="Vyo-Nl-9cl"/>
+                <outlet property="createVendorBgView" destination="tmK-FN-f5g" id="xO7-er-YtI"/>
+                <outlet property="createVendorBgViewLand" destination="VQW-eR-rSz" id="3Tl-BK-uen"/>
+                <outlet property="deleteVendorButton" destination="Xwe-xA-zZ7" id="U2n-Tm-fqD"/>
+                <outlet property="deleteVendorButtonLand" destination="Dck-aF-hXh" id="Uly-LV-sIX"/>
+                <outlet property="gridView" destination="tdB-as-qsr" id="9JE-A9-TWv"/>
+                <outlet property="gridViewLand" destination="7kB-2X-4g9" id="fpL-yJ-6M0"/>
+                <outlet property="lView" destination="sVR-LE-5sS" id="Av8-cb-rA5"/>
+                <outlet property="listView" destination="qEM-bX-3UH" id="VIL-Gw-MWf"/>
+                <outlet property="listViewLand" destination="uY5-22-gib" id="xHj-pK-duE"/>
+                <outlet property="offEditModeBtn" destination="FNl-4U-dpU" id="9lR-oq-km3"/>
+                <outlet property="offEditModeBtnLand" destination="2Ng-vw-fbE" id="yHf-dU-Rbg"/>
+                <outlet property="pView" destination="2" id="nje-cF-TM4"/>
+                <outlet property="refreshBtn" destination="Pja-y7-7hl" id="5mY-GR-PLd"/>
+                <outlet property="refreshBtnLand" destination="PqG-g8-RTu" id="hLG-fo-sIY"/>
+                <outlet property="shareButton" destination="z8b-eh-Mo1" id="7er-eo-Y4Y"/>
+                <outlet property="shareButtonLand" destination="VnP-9w-E4q" id="3uI-Go-5gR"/>
+                <outlet property="shareVendorButton" destination="lkL-eW-uV4" id="fr9-nZ-2Fa"/>
+                <outlet property="shareVendorButtonLand" destination="Fwg-mZ-dFc" id="btD-vO-IDV"/>
+                <outlet property="sortByDate" destination="9Qt-u1-LUH" id="GRH-Eu-FBx"/>
+                <outlet property="sortByDateLand" destination="PbW-ri-oCN" id="kTH-FG-uJA"/>
+                <outlet property="sortingTable" destination="VHc-qP-WO6" id="8SI-iY-h1N"/>
+                <outlet property="sortingTableLand" destination="cxA-u3-Rsb" id="aSu-sV-lLU"/>
+                <outlet property="syncButton" destination="okm-wY-V6b" id="vqs-KE-bY5"/>
+                <outlet property="syncButtonLand" destination="Izi-1z-LAw" id="DBB-5F-X1r"/>
+                <outlet property="tableViewBgImage" destination="NPC-GQ-ht5" id="PZT-nr-sUd"/>
+                <outlet property="tableViewBgImageLand" destination="ygq-p3-jsu" id="6sA-OC-0fX"/>
+                <outlet property="vendorScroller" destination="Fpp-zu-RnO" id="IrL-Va-BcD"/>
+                <outlet property="vendorScrollerLand" destination="GMi-PB-o3c" id="pU1-eB-sWI"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FNl-4U-dpU">
+                    <rect key="frame" x="656" y="52" width="102" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="cancelEditing.png">
+                        <color key="titleColor" red="0.025162049509999999" green="0.25921004050000002" blue="0.26080197700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="offEditModeBtn:" destination="-1" eventType="touchUpInside" id="3VA-7e-uRH"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NPC-GQ-ht5">
+                    <rect key="frame" x="611" y="40" width="147" height="177"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.92827248090000003" green="0.92827248090000003" blue="0.92827248090000003" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VHc-qP-WO6">
+                    <rect key="frame" x="616" y="43" width="137" height="170"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rar-qJ-BPv"/>
+                        <outlet property="delegate" destination="-1" id="rLj-Jz-OGB"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Qt-u1-LUH">
+                    <rect key="frame" x="723" y="12" width="36" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="small_thumb.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sortByDate:" destination="-1" eventType="touchUpInside" id="gjc-co-hSe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z8b-eh-Mo1">
+                    <rect key="frame" x="385" y="12" width="131" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="shared.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sharedButton:" destination="-1" eventType="touchUpInside" id="tFA-Nj-B1o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YP8-Wh-f3h">
+                    <rect key="frame" x="252" y="12" width="133" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="allvender.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="allVendorsButton:" destination="-1" eventType="touchUpInside" id="1dh-Ht-QqX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qEM-bX-3UH">
+                    <rect key="frame" x="664" y="12" width="30" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="list_view.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="displayListView:" destination="-1" eventType="touchUpInside" id="Od7-Cd-67F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pja-y7-7hl">
+                    <rect key="frame" x="9" y="9" width="45" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="sync.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshBtn:" destination="-1" eventType="touchUpInside" id="qfj-Nw-9xT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tdB-as-qsr">
+                    <rect key="frame" x="694" y="12" width="29" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="thumb.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="displayGridView:" destination="-1" eventType="touchUpInside" id="u8u-du-Dcn"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="Fpp-zu-RnO">
+                    <rect key="frame" x="10" y="218" width="748" height="727"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ij0-T5-G8F"/>
+                    </connections>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="YFU-eT-SWh">
+                    <rect key="frame" x="0.0" y="50" width="768" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.63498485331632648" green="0.63498485331632648" blue="0.63498485331632648" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xwe-xA-zZ7">
+                    <rect key="frame" x="410" y="50" width="50" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="delet.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteVendorButton:" destination="-1" eventType="touchUpInside" id="GUt-se-fQ9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lkL-eW-uV4">
+                    <rect key="frame" x="309" y="50" width="55" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="share.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareVendorButton:" destination="-1" eventType="touchUpInside" id="Pxt-jP-Oc5"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="tmK-FN-f5g">
+                    <rect key="frame" x="10" y="86" width="598" height="124"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xyk-rB-6w7">
+                            <rect key="frame" x="0.0" y="-2" width="138" height="127"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="add_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="createNewVendorButton:" destination="-1" eventType="touchUpInside" id="EFm-Nh-9FK"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Vendor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="htT-p0-b7h">
+                            <rect key="frame" x="146" y="47" width="173" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="okm-wY-V6b">
+                    <rect key="frame" x="364" y="52" width="47" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="dropbox.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="syncButton:" destination="-1" eventType="touchUpInside" id="4ho-9E-gF5"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" id="RN8-b7-fBl">
+                    <rect key="frame" x="20" y="870" width="728" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0Jm-nA-H3d"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="sVR-LE-5sS">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Ng-vw-fbE">
+                    <rect key="frame" x="902" y="53" width="102" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="cancelEditing.png">
+                        <color key="titleColor" red="0.025162049509999999" green="0.25921004050000002" blue="0.26080197700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="offEditModeBtn:" destination="-1" eventType="touchUpInside" id="ybw-kE-9zA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ygq-p3-jsu">
+                    <rect key="frame" x="856" y="40" width="147" height="178"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.92827248090000003" green="0.92827248090000003" blue="0.92827248090000003" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cxA-u3-Rsb">
+                    <rect key="frame" x="861" y="43" width="137" height="170"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0o6-ev-e8Y"/>
+                        <outlet property="delegate" destination="-1" id="0aN-7D-v1z"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PbW-ri-oCN">
+                    <rect key="frame" x="968" y="12" width="36" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="small_thumb.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sortByDate:" destination="-1" eventType="touchUpInside" id="aFa-Qs-wvW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VnP-9w-E4q">
+                    <rect key="frame" x="513" y="11" width="131" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="shared.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sharedButton:" destination="-1" eventType="touchUpInside" id="YG1-O2-1mg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yww-eU-rZT">
+                    <rect key="frame" x="380" y="11" width="133" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="allvender.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="allVendorsButton:" destination="-1" eventType="touchUpInside" id="8wv-La-Zab"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uY5-22-gib">
+                    <rect key="frame" x="909" y="12" width="30" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="list_view.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="displayListView:" destination="-1" eventType="touchUpInside" id="CWw-j1-C5j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PqG-g8-RTu">
+                    <rect key="frame" x="9" y="9" width="45" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="sync.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7kB-2X-4g9">
+                    <rect key="frame" x="939" y="12" width="29" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="thumb.jpg">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="displayGridView:" destination="-1" eventType="touchUpInside" id="XUQ-Hh-4eJ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="aZx-ve-mC2">
+                    <rect key="frame" x="0.0" y="46" width="1024" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.63498485329999999" green="0.63498485329999999" blue="0.63498485329999999" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dck-aF-hXh">
+                    <rect key="frame" x="538" y="47" width="50" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="delet.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteVendorButton:" destination="-1" eventType="touchUpInside" id="mUq-Mm-oCR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fwg-mZ-dFc">
+                    <rect key="frame" x="437" y="47" width="55" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="share.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareVendorButton:" destination="-1" eventType="touchUpInside" id="9TC-ja-7rQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Izi-1z-LAw">
+                    <rect key="frame" x="492" y="49" width="47" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="dropbox.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="syncButton:" destination="-1" eventType="touchUpInside" id="ATI-1n-33G"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="GMi-PB-o3c">
+                    <rect key="frame" x="9" y="217" width="1006" height="477"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ujD-Ic-DUc"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" id="VQW-eR-rSz">
+                    <rect key="frame" x="9" y="85" width="748" height="124"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e54-iP-P82">
+                            <rect key="frame" x="0.0" y="-2" width="138" height="127"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="add_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="createNewVendorButton:" destination="-1" eventType="touchUpInside" id="qR6-VJ-VaS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Vendor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6iO-jN-pPX">
+                            <rect key="frame" x="146" y="47" width="173" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </view>
+                <webView contentMode="scaleToFill" id="Cu6-2x-dUt">
+                    <rect key="frame" x="148" y="614" width="728" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wYg-61-rT9"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_icon.png" width="238" height="227"/>
+        <image name="allvender.jpg" width="133" height="27"/>
+        <image name="cancelEditing.png" width="102" height="36"/>
+        <image name="delet.png" width="50" height="37"/>
+        <image name="dropbox.png" width="47" height="37"/>
+        <image name="list_view.jpg" width="30" height="27"/>
+        <image name="share.png" width="55" height="37"/>
+        <image name="shared.jpg" width="131" height="27"/>
+        <image name="small_thumb.jpg" width="36" height="27"/>
+        <image name="sync.jpg" width="45" height="33"/>
+        <image name="thumb.jpg" width="29" height="26"/>
+    </resources>
+</document>
